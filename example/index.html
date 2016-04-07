@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="../dist/angular-flabel.css">
     <link rel="stylesheet" href="./bootstrap.min.css">
     <link rel="stylesheet" href="./app.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.0/angular.min.js"></script> -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../dist/angular-flabel.js"></script>
+    <script src="./app.js"></script>
   </head>
   <body>
 
@@ -18,7 +22,7 @@
         <code>(v0.0.1)</code>
       </div>
       <div class="panel-body">
-        <form name="floating" class="form-vertical" novalidate>
+        <form class="form-vertical" novalidate>
 
           <div class="form-group">
             <input id="normalTextInput" type="text" class="form-control" placeholder="Placeholder..." name="normalTextInput" required
@@ -61,7 +65,7 @@
           <div class="form-group">
             <select id="carSelect" class="form-control" placeholder="Car" name="carSelect" required
             ng-model="carSelect"
-            flabel />
+            flabel>
               <option value="" disabled>Select Car</option>
               <option value="a">Volvo</option>
               <option value="b">Tesla</option>
@@ -78,11 +82,6 @@
         </form>
       </div>
     </div>
-
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.0/angular.min.js"></script> -->
-    <script src="../bower_components/angular/angular.js"></script>
-    <script src="../dist/angular-flabel.js"></script>
-    <script src="./app.js"></script>
   </body>
+
 </html>
