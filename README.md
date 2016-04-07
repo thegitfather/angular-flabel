@@ -12,6 +12,8 @@ So what is cool about it?
 
 ## Demo
 
+![someimage](https://joinpoint.org/saebl/temp/angular-flabel_demo_v0.0.1.gif)
+
 TODO: ~~<https://joinpoint.org/baranowski/angular-flabel/example/index.html>~~
 
 ## Install
