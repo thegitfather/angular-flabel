@@ -10,11 +10,13 @@ So what is cool about it?
 - label and form element are both animated and are **NOT** positioned absolute (meaning the label will stay in the normal document flow)
 - very simple (happy extending)
 
-## Demo
+## Preview
 
 ![demo gif](https://raw.githubusercontent.com/thegitfather/angular-flabel/master/demo/angular-flabel_demo_v0.0.1.gif)
 
-TODO: ~~<https://joinpoint.org/baranowski/angular-flabel/example/index.html>~~
+## Demo
+
+[Plunker embedded view](http://embed.plnkr.co/WKvvTO/) / [Plunker edit](http://plnkr.co/edit/WKvvTO?p=preview)
 
 ## Install
 
@@ -57,4 +59,4 @@ $ cd angular-flabel && npm install
 
 If your project is using bower and your clone is outside your project directory, you can use [`$ bower link`:link:](http://bower.io/docs/api/#link)
 
-If you have a gulp installed globally just run `$ gulp watch`. Otherwise use `$ npm start`.
+If you have gulp installed globally just run `$ gulp watch` or `$ gulp build`. Otherwise type `$ npm start` to use the locally installed gulp to start the watch task.
