@@ -12,7 +12,7 @@ So what is cool about it?
 
 ## Preview
 
-![demo gif](https://raw.githubusercontent.com/thegitfather/zzz_assets/master/angular-flabel/angular-flabel_demo_v0.0.1.gif)
+![demo gif](https://raw.githubusercontent.com/thegitfather/zzz_assets/master/angular-flabel/angular-flabel-demo.gif)
 
 ## Demo
 
