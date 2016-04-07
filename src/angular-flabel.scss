@@ -1,0 +1,58 @@
+.flabeled {
+  position: relative;
+  label.flabel {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1em;
+    position: relative;
+    z-index: 2;
+    /*pointer-events: none;*/
+    transition: all ease 0.2s, opacity ease 0.4s;
+  }
+  input, textarea {
+    position: relative;
+    z-index: 1;
+    transition: all ease 0.1s;
+  }
+}
+
+.flabel-visible {
+  label.flabel {
+    margin-bottom: 4px;
+    max-height: 100%;
+    opacity: 1;
+    animation: 0.3s bounceInUp;
+  }
+  input, textarea {}
+}
+
+.flabel-hidden {
+  label.flabel {
+    opacity: 0;
+    input, textarea {}
+  }
+}
+
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  from {
+    transform: translate3d(0, 10em, 0);
+  }
+  60% {
+    transform: translate3d(0, -0.6em, 0);
+  }
+  75% {
+    transform: translate3d(0, 0.33em, 0);
+  }
+  90% {
+    transform: translate3d(0, -0.15em, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}

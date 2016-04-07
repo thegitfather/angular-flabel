@@ -1,0 +1,41 @@
+{
+  "name": "angular-flabel",
+  "version": "0.0.1",
+  "description": "Simple Angular directive to show/hide a label",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thegitfather/angular-flabel.git"
+  },
+  "main": [
+    "./dist/angular-flabel.js",
+    "./dist/angular-flabel.css"
+  ],
+  "dependencies": {
+    "angular": "^1.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "example",
+    "src",
+    "bower.json",
+    "package.json",
+    "gulpfile.js"
+  ],
+  "keywords": [
+    "angular",
+    "angularjs",
+    "directive",
+    "form",
+    "label",
+    "flexbox",
+    "css3",
+    "animation"
+  ],
+  "authors": [
+    "Sebastian Baranowski <baranowski@joinpoint.org>"
+  ],
+  "license": "MIT",
+  "private": false
+}

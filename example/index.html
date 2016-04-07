@@ -1,0 +1,88 @@
+<!DOCTYPE html ng-app="app">
+<html lang="en" ng-app="app" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>angular-flabel demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../dist/angular-flabel.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./app.css">
+  </head>
+  <body>
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3>angular-flabel demo</h3>
+        <code>(v0.0.1)</code>
+      </div>
+      <div class="panel-body">
+        <form name="floating" class="form-vertical" novalidate>
+
+          <div class="form-group">
+            <input id="normalTextInput" type="text" class="form-control" placeholder="Placeholder..." name="normalTextInput" required
+            ng-model="normalTextInput1"
+            flabel />
+          </div>
+
+          <div class="form-group">
+            <input id="normalTextInput2" type="text" class="form-control" placeholder="Placeholder... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident" name="normalTextInput2" required
+            ng-model="normalTextInput2"
+            flabel />
+          </div>
+
+          <div class="form-group tiny-label-font-size">
+            <input id="normalTextInput3" type="text" class="form-control" placeholder="Placeholder..." name="normalTextInput3" required
+            ng-model="normalTextInput3"
+            flabel />
+          </div>
+
+          <div class="form-group huge-label-font-size">
+            <input id="normalTextInput4" type="text" class="form-control" placeholder="Placeholder..." name="normalTextInput4" required
+            ng-model="normalTextInput4"
+            flabel />
+          </div>
+
+          <hr>
+
+          <div class="form-group">
+            <input id="emailInput" type="email" class="form-control" placeholder="Email" name="emailInput" required
+            ng-model="emailInput"
+            flabel />
+          </div>
+
+          <div class="form-group">
+            <input id="someNumber" type="number" class="form-control" placeholder="Number" name="someNumber" required
+            ng-model="someNumber"
+            flabel />
+          </div>
+
+          <div class="form-group">
+            <select id="carSelect" class="form-control" placeholder="Car" name="carSelect" required
+            ng-model="carSelect"
+            flabel />
+              <option value="" disabled>Select Car</option>
+              <option value="a">Volvo</option>
+              <option value="b">Tesla</option>
+              <option value="b">BMW</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control" placeholder="A textarea..." id="textarea"
+            ng-model="textarea"
+            flabel></textarea>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.0/angular.min.js"></script> -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../dist/angular-flabel.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

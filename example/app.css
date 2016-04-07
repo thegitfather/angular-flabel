@@ -1,0 +1,44 @@
+body {
+  padding: 1em;
+}
+
+.panel {
+  max-width: 480px;
+  min-width: 320px;
+  margin: 20px auto;
+}
+
+form {
+  padding: 1em 0.5em;
+}
+
+.tiny-label-font-size {
+  font-size: 11px;
+}
+
+.huge-label-font-size {
+  font-size: 28px;
+}
+
+label {
+  color: #555;
+  font-weight: normal;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea {
+  font-family: monospace;
+}
+
+.panel-heading {
+  position: relative;
+}
+
+.panel-heading code {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  font-size: 80%;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.25);
+}
