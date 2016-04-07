@@ -12,8 +12,7 @@ So what is cool about it?
 
 ## Demo
 
-![demo gif](https://joinpoint.org/saebl/temp/angular-flabel_demo_v0.0.1.gif)
-![demo gif 2](https://raw.githubusercontent.com/thegitfather/angular-flabel/master/demo/angular-flabel_demo_v0.0.1.gif)
+![demo gif](https://raw.githubusercontent.com/thegitfather/angular-flabel/master/demo/angular-flabel_demo_v0.0.1.gif)
 
 TODO: ~~<https://joinpoint.org/baranowski/angular-flabel/example/index.html>~~
 
