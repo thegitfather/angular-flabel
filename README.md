@@ -47,7 +47,7 @@ Add `flabel` directive to a form element:
 </div>
 ```
 
-The form element should be enclosed by some kind of container (e.g. `<div class="form-group">...</div>`). You also need to specify a model (`ng-model="..."`) for the directive to work.
+The form element should be enclosed by some kind of container (e.g. `<div class="form-group">...</div>`). You also need to specify a model (`ng-model="..."`) and a `placeholder` attribute for the directive to work.
 
 ## Develop
 
