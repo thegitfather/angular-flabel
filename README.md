@@ -16,7 +16,7 @@ So what is cool about it?
 
 ## Demo
 
-Plunker: [embedded view](http://embed.plnkr.co/WKvvTO/) / [edit](http://plnkr.co/edit/WKvvTO?p=preview)
+~~Plunker: [embedded view](http://embed.plnkr.co/WKvvTO/) / [edit](http://plnkr.co/edit/WKvvTO?p=preview)~~
 
 ## Install
 
@@ -39,15 +39,15 @@ Add `flabel` directive to a form element:
 ```html
 <div class="form-group">
   <input id="normalTextInput" type="text" class="form-control"
-    placeholder="Placeholder..."
+    placeholder="Email address (e.g. peter.smith@example.com)"
     name="normalTextInput"
     required
     ng-model="normalTextInput1"
-    flabel />
+    flabel="Your Email" />
 </div>
 ```
 
-The form element should be enclosed by some kind of container (e.g. `<div class="form-group">...</div>`). You also need to specify a model (`ng-model="..."`) and a `placeholder` attribute for the directive to work.
+The form element should be enclosed by some kind of container (e.g. `<div class="form-group">...</div>`). You also need to specify a model (`ng-model="..."`). If the `flabel` attribute contains no string then the text from `placeholder` will be used.
 
 ## Develop
 

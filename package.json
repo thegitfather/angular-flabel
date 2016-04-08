@@ -1,6 +1,6 @@
 {
   "name": "angular-flabel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple Angular directive to show/hide a label",
   "repository": {
     "type": "git",

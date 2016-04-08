@@ -13,7 +13,6 @@
   line-height: 1em;
   position: relative;
   z-index: 2;
-  /*pointer-events: none;*/
   transition: all ease 0.2s, opacity ease 0.4s;
 }
 
@@ -29,10 +28,12 @@
   opacity: 1;
   -webkit-animation: 0.3s bounceInUp;
           animation: 0.3s bounceInUp;
+  pointer-events: auto;
 }
 
 .flabel-hidden label.flabel {
   opacity: 0;
+  pointer-events: none;
 }
 
 @-webkit-keyframes bounceInUp {

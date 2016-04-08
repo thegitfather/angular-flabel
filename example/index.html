@@ -11,72 +11,58 @@
     <link rel="stylesheet" href="./app.css">
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.0/angular.min.js"></script> -->
     <script src="../bower_components/angular/angular.js"></script>
-    <script src="../dist/angular-flabel.js"></script>
+    <script src="../src/angular-flabel.js"></script>
     <script src="./app.js"></script>
   </head>
   <body>
 
     <div class="panel panel-primary">
       <div class="panel-heading">
-        <h3>angular-flabel demo</h3>
-        <code>(v0.0.1)</code>
+        <h1>angular-flabel demo</h1>
+        <code>(v0.0.2)</code>
       </div>
       <div class="panel-body">
         <form class="form-vertical" novalidate>
 
           <div class="form-group">
-            <input id="normalTextInput" type="text" class="form-control" placeholder="Placeholder..." name="normalTextInput" required
-            ng-model="normalTextInput1"
-            flabel />
-          </div>
-
-          <div class="form-group">
-            <input id="normalTextInput2" type="text" class="form-control" placeholder="Placeholder... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident" name="normalTextInput2" required
-            ng-model="normalTextInput2"
-            flabel />
-          </div>
-
-          <div class="form-group tiny-label-font-size">
-            <input id="normalTextInput3" type="text" class="form-control" placeholder="Placeholder..." name="normalTextInput3" required
-            ng-model="normalTextInput3"
-            flabel />
+            <input id="emailInput" type="email" class="form-control" placeholder="Email address (e.g. peter.smith@example.com)" name="emailInput" required
+            ng-model="emailInput"
+            flabel="Your Email" />
           </div>
 
           <div class="form-group huge-label-font-size">
-            <input id="normalTextInput4" type="text" class="form-control" placeholder="Placeholder..." name="normalTextInput4" required
-            ng-model="normalTextInput4"
-            flabel />
-          </div>
-
-          <hr>
-
-          <div class="form-group">
-            <input id="emailInput" type="email" class="form-control" placeholder="Email" name="emailInput" required
-            ng-model="emailInput"
-            flabel />
+            <input id="inputHugeLabel" type="text" class="form-control" placeholder="Placeholder..." name="inputHugeLabel" required
+            ng-model="inputHugeLabel"
+            flabel="Label with huge font size" />
           </div>
 
           <div class="form-group">
-            <input id="someNumber" type="number" class="form-control" placeholder="Number" name="someNumber" required
-            ng-model="someNumber"
-            flabel />
+            <input id="inputLongLabel" type="text" class="form-control" placeholder="A very long label text" name="inputLongLabel" required
+            ng-model="inputLongLabel"
+            flabel="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore Duis aute irure dolor in reprehenderit in voluptate velit" />
           </div>
 
           <div class="form-group">
-            <select id="carSelect" class="form-control" placeholder="Car" name="carSelect" required
-            ng-model="carSelect"
-            flabel>
-              <option value="" disabled>Select Car</option>
-              <option value="a">Volvo</option>
-              <option value="b">Tesla</option>
-              <option value="b">BMW</option>
+            <select id="selectFruit" class="form-control" name="selectFruit" required
+            ng-model="selectFruit"
+            flabel="Your flavor">
+              <option value="" disabled>Select your favorite flavor</option>
+              <option value="1">Banana</option>
+              <option value="2">Chocolate</option>
+              <option value="3">Cherry</option>
             </select>
           </div>
 
           <div class="form-group">
-            <textarea class="form-control" placeholder="A textarea..." id="textarea"
-            ng-model="textarea"
-            flabel></textarea>
+            <textarea class="form-control" placeholder="Enter your message here..." id="textarea"
+            ng-model="textareaMessage"
+            flabel="Your Message"></textarea>
+          </div>
+
+          <div class="form-group huge-label-font-size">
+            <input  type="text" class="form-control" name="noLabel" required
+            ng-model="noLabel"
+            flabel />
           </div>
 
         </form>
