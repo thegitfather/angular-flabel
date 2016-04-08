@@ -59,4 +59,4 @@ $ cd angular-flabel && npm install
 
 If your project is using bower and your clone is outside your project directory, you can use [`$ bower link`:link:](http://bower.io/docs/api/#link)
 
-If you have gulp installed globally just run `$ gulp watch` or `$ gulp build`. Otherwise type `$ npm start` to use the locally installed gulp to start the watch task.
+If you installed gulp globally just run `$ gulp watch` or `$ gulp build`. Otherwise type `$ npm start` to use the locally installed gulp to start the watch task.
