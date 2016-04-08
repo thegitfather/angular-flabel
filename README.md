@@ -16,7 +16,7 @@ So what is cool about it?
 
 ## Demo
 
-~~Plunker: [embedded view](http://embed.plnkr.co/WKvvTO/) / [edit](http://plnkr.co/edit/WKvvTO?p=preview)~~
+Plunker: [embedded view](http://embed.plnkr.co/WKvvTO/) / [edit](http://plnkr.co/edit/WKvvTO?p=preview)
 
 ## Install
 
