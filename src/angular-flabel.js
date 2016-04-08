@@ -18,6 +18,9 @@ angular.module('thegitfather.flabel', [])
           return; // aborting here
         }
 
+        // disable autocomplete (popup interferes with animation)
+        attrs.$set("autocomplete", "off");
+
         // set 'for' attribute if element has id
         if (attrs.id !== undefined && attrs.id.length) {
           $flabel.attr("for", attrs.id);
