@@ -31,7 +31,7 @@ angular.module('thegitfather.flabel', [])
         scope.$watch('flabelCtrl.$modelValue', checkValueLength);
         scope.$watch('flabelCtrl.$viewValue', checkValueLength);
 
-        scope.toggleFlabel = function (show) {
+        function toggleFlabel(show) {
           if (show) {
             if (!$flabelContainer.hasClass('flabel-visible')) {
               $flabelContainer.removeClass('flabel-hidden');
@@ -41,7 +41,7 @@ angular.module('thegitfather.flabel', [])
             $flabelContainer.removeClass('flabel-visible');
             $flabelContainer.addClass('flabel-hidden');
           }
-        };
+        }
 
         function getLabelText() {
           if (attrs.flabel.length) {
@@ -53,13 +53,13 @@ angular.module('thegitfather.flabel', [])
           }
         }
 
-        function checkValueLength (newValue) {
-         if (newValue !== undefined && newValue.length > 0) {
-           scope.toggleFlabel(true);
-         } else {
-           scope.toggleFlabel(false);
-         }
-       }
+        function checkValueLength(newValue) {
+          if (newValue !== undefined && newValue.length > 0) {
+            toggleFlabel(true);
+          } else {
+            toggleFlabel(false);
+          }
+        }
 
       }
     };
