@@ -3,7 +3,7 @@ Simple Angular directive to show/hide a label
 
 ## Description
 
-Currently supported elements are `input[type='text/email/password/number']`, `select` and `textarea`. Currently it uses the `placeholder` value for the label text.
+Currently supported elements are `input[type='text/email/password/number']`, `select` and `textarea`.
 
 So what is cool about it?
 
